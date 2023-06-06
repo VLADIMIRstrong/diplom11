@@ -192,9 +192,9 @@ public class CreditPageTests {
     }
 
     @Test
-    void creditNegativeOwnerCirillic() {
+    void creditNegativeOwnerCyrillic() {
         startPage.creditPage();
-        var cardInfo = DataHelper.getCardHolderCirillic();
+        var cardInfo = DataHelper.getCardHolderCyrillic();
         var creditPage = new CreditPage();
         creditPage.insertCardData(cardInfo);
         creditPage.waitNotificationWrongFormat();
@@ -221,5 +221,4 @@ public class CreditPageTests {
         assertEquals("0", SQLHelper.getOrderCount());
     }
 }
-
 

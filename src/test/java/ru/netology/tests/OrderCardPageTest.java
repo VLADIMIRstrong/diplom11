@@ -197,7 +197,7 @@ public class OrderCardPageTest {
     @Test
     void buyNegativeOwnerCirillic() {
         startPage.orderCardPage();
-        var cardInfo = DataHelper.getCardHolderCirillic();
+        var cardInfo = DataHelper.getCardHolderCyrillic();
         var orderCardPage = new OrderCardPage();
         orderCardPage.insertCardData(cardInfo);
         orderCardPage.waitNotificationWrongFormat();

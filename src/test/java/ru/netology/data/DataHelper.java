@@ -12,11 +12,11 @@ import java.lang.Math;
 public class DataHelper {
 
     public static CardInfo getApprovedCard() {
-        return new CardInfo("4444444444444441", "08", "23", "Dmitry Kurtsev", "888");
+        return new CardInfo("4444444444444441", "08", "23", "Vladimir Erochin", "888");
     }
 
     public static CardInfo getDeclinedCard() {
-        return new CardInfo("4444444444444442", "09", "24", "Dmitry Kurtsev", "777");
+        return new CardInfo("4444444444444442", "09", "24", "Vladimir Erochin", "777");
     }
 
     public static CardInfo getEmptyCard() {
@@ -48,7 +48,7 @@ public class DataHelper {
         String month = getShiftedMonth();
         String year = getShiftedYear(1);
         String cvv = faker.number().digits(3);
-        return new CardInfo("1444444444444444", month, year, holder, cvv);
+        return new CardInfo("4444444444444444", month, year, holder, cvv);
     }
 
     public static CardInfo getCardMonth1Symbol() {
@@ -146,7 +146,7 @@ public class DataHelper {
         return new CardInfo("4444444444444441", month, year, holder, cvv);
     }
 
-    public static CardInfo getCardHolderCirillic() {
+    public static CardInfo getCardHolderCyrillic() {
         Faker faker = new Faker(new Locale("ru"));
         String holder = faker.name().firstName() + " " + faker.name().lastName();
         String month = getShiftedMonth();
