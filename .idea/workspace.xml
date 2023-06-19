@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c756f959-aa0c-470c-8ff1-aaa1ec6d7781" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Docs/Report.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Docs/Summary.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c756f959-aa0c-470c-8ff1-aaa1ec6d7781" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,6 +77,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\diplom3\Docs" />
+    </key>
+  </component>
   <component name="RunManager" selected="Gradle.CreditPageTests.creditPositiveAllFieldValidDeclined">
     <configuration name="CreditPageTests.creditPositiveAllFieldValidApproved" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
