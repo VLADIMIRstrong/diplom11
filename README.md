@@ -7,7 +7,7 @@
 Git
 IntelliJ IDEA
 JDK 11
-Docker Desktop (инструкция, обратить внимание на системные требования)
+Docker Desktop (https://github.com/netology-code/aqa-homeworks/blob/master/docker/installation.md , обратить внимание на системные требования)
 1.2 Запуск Docker Desktop
 Открыть Docker Desktop
 При первом использовании может понадобиться авторизация на Docker Hub
