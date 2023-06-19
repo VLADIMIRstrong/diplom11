@@ -1,8 +1,8 @@
- Дипломный проект по профессии «Тестировщик»
+# Дипломный проект по профессии «Тестировщик»
 Дипломный проект представляет собой автоматизацию тестирования комплексного сервиса, взаимодействующего с СУБД и API Банка
 
-Инструкция по запуску автотестов
-1. Подготовка окружения
+# Инструкция по запуску автотестов
+## 1.Подготовка окружения
 1.1 Установленное ПО
 Git
 IntelliJ IDEA
@@ -21,10 +21,10 @@ Docker Desktop (https://github.com/netology-code/aqa-homeworks/blob/master/docke
 1.5. Запуск SUT с подключением к PostgreSQL
 В IntelliJ IDEA открыть дополнительную с терминалом кликом по кнопке +
 Выполнить команду: java "-Dspring.datasource.url=jdbc:postgresql://localhost:5432/app" -jar artifacts/aqa-shop.jar
-2. Запуск автотестов
+## 2. Запуск автотестов
 В IntelliJ IDEA дважды нажать Ctrl и в командной строке «Run Anything» выполнить одну из команд в зависимости от выбранной СУБД:
 MySQL: ./gradlew clean test "-Ddb.url=jdbc:mysql://localhost:3306/app"
 PostgreSQL: ./gradlew clean test "-Ddb.url=jdbc:postgresql://localhost:5432/app"
-3. Создание отчёта Allure
+## 3. Создание отчёта Allure
 В IntelliJ IDEA выполнить команду: ./gradlew allureServe
 После выполнения всех тестов остановить docker контейнер командой в консоли: docker-compose down
