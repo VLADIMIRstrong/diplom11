@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class OrderCardPageTest {
     StartPage startPage = open("http://localhost:8080/", StartPage.class);
 
-    public static String url = System.getProperty("sut.url");
+
 
     @AfterEach
     public void cleanBase() {
@@ -195,7 +195,7 @@ public class OrderCardPageTest {
     }
 
     @Test
-    void buyNegativeOwnerCirillic() {
+    void buyNegativeOwnerCyrillic() {
         startPage.orderCardPage();
         var cardInfo = DataHelper.getCardHolderCyrillic();
         var orderCardPage = new OrderCardPage();

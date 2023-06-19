@@ -60,7 +60,7 @@ public class CreditPage {
     }
 
     public void waitNotificationExpiredError() {
-        cardExpiredError.shouldBe(visible, Duration.ofSeconds(15));
+        cardExpiredError.shouldBe(visible, Duration.ofSeconds(4));
     }
     public void waitNotificationWrongFormat4Fields() {
         wrongFormat4Error.shouldHave(size(4));

@@ -50,18 +50,18 @@ public class OrderCardPage {
     }
 
     public void waitNotificationWrongFormat() {
-        wrongFormatError.shouldBe(visible, Duration.ofSeconds(15));
+        wrongFormatError.shouldBe(visible );
     }
 
     public void waitNotificationExpirationDateError() {
-        cardExpirationDateError.shouldBe(visible, Duration.ofSeconds(15));
+        cardExpirationDateError.shouldBe(visible );
     }
 
     public void waitNotificationExpiredError() {
-        cardExpiredError.shouldBe(visible, Duration.ofSeconds(15));
+        cardExpiredError.shouldBe(visible, Duration.ofSeconds(4));
     }
     public void waitNotificationWrongFormat4Fields() {
         wrongFormat4Error.shouldHave(size(4));
-        requiredFieldError.shouldBe(visible, Duration.ofSeconds(15));
+        requiredFieldError.shouldBe(visible );
     }
 }

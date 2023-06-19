@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CreditPageTests {
     StartPage startPage = open("http://localhost:8080/", StartPage.class);
-    public static String url = System.getProperty("sut.url");
+
 
     @AfterEach
     public void cleanBase() {

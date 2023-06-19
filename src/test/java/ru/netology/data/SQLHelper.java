@@ -1,5 +1,6 @@
 package ru.netology.data;
 
+import lombok.SneakyThrows;
 import lombok.val;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
@@ -11,51 +12,45 @@ public class SQLHelper {
     private static String url = System.getProperty("db.url");
     private static String user = System.getProperty("db.user");
     private static String password = System.getProperty("db.password");
-
+@SneakyThrows
     public static void clearDB() {
-        val cleanCreditRequest = "DELETE FROM credit_request_entity;";
-        val cleanOrder = "DELETE FROM order_entity;";
-        val cleanPayment = "DELETE FROM payment_entity;";
-        val runner = new QueryRunner();
-        try (val conn = DriverManager.getConnection(url, user, password)) {
+        var cleanCreditRequest = "DELETE FROM credit_request_entity;";
+        var cleanOrder = "DELETE FROM order_entity;";
+        var cleanPayment = "DELETE FROM payment_entity;";
+        var runner = new QueryRunner();
+        var conn = DriverManager.getConnection(url, user, password);
             runner.update(conn, cleanCreditRequest);
             runner.update(conn, cleanOrder);
             runner.update(conn, cleanPayment);
-        } catch (Exception e) {
-            System.out.println("SQL exception in clearDB");
-        }
-    }
 
+    }
+@SneakyThrows
     public static String getPaymentStatus() {
-        val codesSQL = "SELECT status FROM payment_entity;";
+        var codesSQL = "SELECT status FROM payment_entity;";
         return getData(codesSQL);
     }
-
+@SneakyThrows
     public static String getCreditRequestStatus() {
-        val codesSQL = "SELECT status FROM credit_request_entity;";
+        var codesSQL = "SELECT status FROM credit_request_entity;";
         return getData(codesSQL);
     }
-
+@SneakyThrows
     public static String getOrderCount() {
         Long count = null;
-        val codesSQL = " SELECT COUNT(*) FROM order_entity;";
-        val runner = new QueryRunner();
-        try (val conn = DriverManager.getConnection(url, user, password)) {
+        var codesSQL = " SELECT COUNT(*) FROM order_entity;";
+        var runner = new QueryRunner();
+        var conn = DriverManager.getConnection(url, user, password);
             count = runner.query(conn, codesSQL, new ScalarHandler<>());
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+
         return Long.toString(count);
     }
-
+@SneakyThrows
     private static String getData(String query) {
         String data = "";
-        val runner = new QueryRunner();
-        try (val conn = DriverManager.getConnection(url, user, password)) {
+        var runner = new QueryRunner();
+        var conn = DriverManager.getConnection(url, user, password);
             data = runner.query(conn, query, new ScalarHandler<>());
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+
         return data;
     }
 }

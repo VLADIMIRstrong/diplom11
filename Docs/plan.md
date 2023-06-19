@@ -11,7 +11,7 @@
 5. В IntelliJ IDEA открываем терминал и запускаем команду `docker-compose up`. Ожидаем сборки контейнера.
 6. В IntelliJ IDEA открываем второй терминал и запускаем SUT командой `java "-Dspring.datasource.url=jdbc:mysql://localhost:3306/app" -jar artifacts/aqa-shop.jar` для mysql или командой `java "-Dspring.datasource.url=jdbc:postgresql://localhost:5432/app" -jar artifacts/aqa-shop.jar` для postgresql.
 7. Запуск тестов производится с параметрами, указавая путь к базе данных в командной строке в терминале:
-   для mysql `./gradlew clean test "-Ddb.url=jdbc:mysql://localhost:3306/app"`
+   для mysql `./gradlew clean test "-Ddb.url=jdbc:mysql://localhost:3306/app"` 
    для postgresql `./gradlew clean test "-Ddb.url=jdbc:postgresql://localhost:5432/app"`
 
 ### Входные данные:
@@ -149,7 +149,7 @@
 - Ожидаемый результат: символы не вводятся.
 
 ## Перечень используемых инструментов:
- IDEA, Docker, chrome
+ IDEA, Docker, chrome,java,Windows 10
 
 ## Перечень и описание возможных рисков при автоматизации:
 - Риск появления проблем с настройкой приложения и необходимых БД.
