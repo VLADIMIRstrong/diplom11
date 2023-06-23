@@ -20,10 +20,12 @@
 
 #### Отчет по результатам тестирования Gradle:
  
+![Скриншот 23-06-2023 124006](https://github.com/VLADIMIRstrong/diplom-3/assets/120030142/a652d778-f3e0-4367-80c0-f3ea5ad6ffc3)
 
 #### Отчет по результатам тестирования Allure:
  
 
+![2023-06-23_12-38-25](https://github.com/VLADIMIRstrong/diplom-3/assets/120030142/c4887daf-1faf-49fa-922c-3bf0e10c45ab)
 
 ### Общие рекомендации
 
