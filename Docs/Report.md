@@ -19,13 +19,15 @@
 - Неуспешных - 16 (31.58%)
 
 #### Отчет по результатам тестирования Gradle:
-![Скриншот 23-06-2023 124006](https://github.com/VLADIMIRstrong/diplom-3/assets/120030142/828addad-4a6f-476a-88b8-3f665a35e69f)
+ 
   
 
 #### Отчет по результатам тестирования Allure:
 
 
-![2023-06-23_12-38-25](https://github.com/VLADIMIRstrong/diplom-3/assets/120030142/382dd1fb-1fcd-40f2-82ce-b2f598593bad)
+ 
+
+ 
 
 ### Общие рекомендации
 
