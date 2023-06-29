@@ -13,7 +13,7 @@ Docker Desktop (https://github.com/netology-code/aqa-homeworks/blob/master/docke
 При первом использовании может понадобиться авторизация на Docker Hub
 ### 1.3 Инициализация контейнеров с СУБД MySQL, PostgreSQL и симулятором банковских сервисов
 В IntelliJ IDEA открыть терминал (Alt+F12)
-Выполнить команду: docker-compose up
+Выполнить команду: _docker-compose up_
 Дождаться сборки контейнера
 ### 1.4. Запуск SUT с подключением к MySQL
 В IntelliJ IDEA открыть дополнительную вкладку с терминалом кликом по кнопке +
