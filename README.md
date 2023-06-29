@@ -3,22 +3,22 @@
 
 # Инструкция по запуску автотестов
 ## 1.Подготовка окружения
-1.1 Установленное ПО
+### 1.1 Установленное ПО
 Git
 IntelliJ IDEA
 JDK 11
 Docker Desktop (https://github.com/netology-code/aqa-homeworks/blob/master/docker/installation.md , обратить внимание на системные требования)
-1.2 Запуск Docker Desktop
+### 1.2 Запуск Docker Desktop
 Открыть Docker Desktop
 При первом использовании может понадобиться авторизация на Docker Hub
-1.3 Инициализация контейнеров с СУБД MySQL, PostgreSQL и симулятором банковских сервисов
+### 1.3 Инициализация контейнеров с СУБД MySQL, PostgreSQL и симулятором банковских сервисов
 В IntelliJ IDEA открыть терминал (Alt+F12)
 Выполнить команду: docker-compose up
 Дождаться сборки контейнера
-1.4. Запуск SUT с подключением к MySQL
+### 1.4. Запуск SUT с подключением к MySQL
 В IntelliJ IDEA открыть дополнительную вкладку с терминалом кликом по кнопке +
 Выполнить команду: java "-Dspring.datasource.url=jdbc:mysql://localhost:3306/app" -jar artifacts/aqa-shop.jar
-1.5. Запуск SUT с подключением к PostgreSQL
+### 1.5. Запуск SUT с подключением к PostgreSQL
 В IntelliJ IDEA открыть дополнительную с терминалом кликом по кнопке +
 Выполнить команду: java "-Dspring.datasource.url=jdbc:postgresql://localhost:5432/app" -jar artifacts/aqa-shop.jar
 ## 2. Запуск автотестов
