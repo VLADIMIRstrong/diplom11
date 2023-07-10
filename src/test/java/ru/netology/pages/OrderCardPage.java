@@ -60,6 +60,7 @@ public class OrderCardPage {
     public void waitNotificationExpiredError() {
         cardExpiredError.shouldBe(visible);
     }
+
     public void waitNotificationWrongFormat4Fields() {
         wrongFormat4Error.shouldHave(size(4));
         requiredFieldError.shouldBe(visible);

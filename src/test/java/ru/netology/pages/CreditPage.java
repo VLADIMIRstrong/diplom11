@@ -29,7 +29,6 @@ public class CreditPage {
     private SelenideElement requiredFieldError = $(byText("Поле обязательно для заполнения"));
 
 
-
     public CreditPage() {
         heading.shouldBe(visible);
     }
@@ -62,6 +61,7 @@ public class CreditPage {
     public void waitNotificationExpiredError() {
         cardExpiredError.shouldBe(visible);
     }
+
     public void waitNotificationWrongFormat4Fields() {
         wrongFormat4Error.shouldHave(size(4));
         requiredFieldError.shouldBe(visible);

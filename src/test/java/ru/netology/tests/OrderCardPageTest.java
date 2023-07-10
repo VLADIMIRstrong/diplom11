@@ -16,7 +16,6 @@ public class OrderCardPageTest {
     StartPage startPage = open("http://localhost:8080/", StartPage.class);
 
 
-
     @AfterEach
     public void cleanBase() {
         SQLHelper.clearDB();
@@ -114,6 +113,7 @@ public class OrderCardPageTest {
         orderCardPage.waitNotificationExpirationDateError();
         assertEquals("0", SQLHelper.getOrderCount());
     }
+
     @Test
     void creditNegativeMonth00OverThisYear() {
         startPage.orderCardPage();

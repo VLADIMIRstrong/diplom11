@@ -1,4 +1,5 @@
 package ru.netology.tests;
+
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.*;
 import ru.netology.data.DataHelper;
@@ -111,6 +112,7 @@ public class CreditPageTests {
         creditPage.waitNotificationExpirationDateError();
         assertEquals("0", SQLHelper.getOrderCount());
     }
+
     @Test
     void creditNegativeMonth00OverThisYear() {
         startPage.creditPage();
