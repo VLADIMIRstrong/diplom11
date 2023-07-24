@@ -28,13 +28,13 @@ public class SQLHelper {
 
     @SneakyThrows
     public static String getPaymentStatus() {
-        var codesSQL = "SELECT * From table Order By id DESC LiMIT 1;";
+        var codesSQL = "SELECT * From payment_entity order By created DESC LiMIT 1;";
         return getData(codesSQL);
     }
 
     @SneakyThrows
     public static String getCreditRequestStatus() {
-        var codesSQL =  "SELECT * From table Order By id DESC LiMIT 1;";
+        var codesSQL = "SELECT * From  credit_request entity order By created DESC LiMIT 1;";
         return getData(codesSQL);
     }
 
